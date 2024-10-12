@@ -14,12 +14,12 @@ export class AddAddressComponent {
 
   constructor(private activeModal: NgbActiveModal, private http: HttpClient) { }
 
-
+  // Function to dismiss the modal
   dismiss() {
     this.activeModal.close();
   }
 
-
+  // Function to get user's current location
   getLocation() {
     console.log("Attempting to get location...");
     if (navigator.geolocation) {
