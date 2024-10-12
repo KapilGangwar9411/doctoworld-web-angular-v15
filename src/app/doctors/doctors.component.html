@@ -1,0 +1,768 @@
+<div class="body_wrapper">
+    <!-- Banner section start -->
+    <div class="banner">
+        <div class="mainBanner position-relative z-3 pt-5">
+            <div class="container position-relative z-3 pt-3">
+                <div class="row gap-0 align-items-end position-relative z-3">
+                    <div class="col-12 col-lg-6   pb-5 mb-3">
+                        <h1 class="h-font pb-4 text-center pt-5 pt-lg-0 text-lg-start an-1" innerHtml="{{'book_doctor_appointment' | translate}}"></h1>
+                        <p class="pb-5 text-center text-lg-start ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> sed do eiusmod tempor.
+                        </p>
+                        <form class="col-12 col-lg-10 px-0" role="search">
+                            <div class="form-group search_box mb-0">
+                                <div class="form-group-inner d-flex align-items-center mb-0">
+                                    <input type="search" class="form-control" placeholder="{{'search_doctor' | translate}}">
+                                    <button class="btn" type="submit">
+                                        <i class="zmdi zmdi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center" style="overflow: hidden">
+                        <img src="assets/images/doctor_banner.png" class="img-fluid col-10 col-lg-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features section start -->
+
+
+        <!-- category section start -->
+        <div class="category">
+            <div class="container">
+                <owl-carousel-o [options]="categoryCarousel">
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Doctors
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Dentist
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Ayurvedic
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Surgeon
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                OTC Medicines
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Diabetes Medicine
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Baby & Mother
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Doctors
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Dentist
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Ayurvedic
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Surgeon
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                OTC Medicines
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Diabetes Medicine
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Baby & Mother
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <!-- category section end -->
+    </div>
+    <!-- Banner section end -->
+
+
+
+    <!-- List of Specialties section start -->
+    <section class="specialties py-5">
+        <div class="sectionHeader">
+            <div class="container">
+                <h2 class="text-center text-lg-start">{{'list_of_doctor_specialiries' | translate}}</h2>
+            </div>
+        </div>
+
+        <div class="sectionContent">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Abdominal radiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Breast imaging</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Cardiothoracic radiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Cardiovascular radiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Chest radiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Emergency radiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Endovascular surgical neuroradiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Gastroenterology radiology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Hematology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Medical Genetics</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Nephrology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Neurology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Obstetrics and Gynecology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Oncology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Ophthalmology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Orthopedic Surgery</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Otolaryngology (Ear, Nose, and Throat)</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Pathology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Pediatrics</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Physical Medicine and Rehabilitation</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Plastic Surgery</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Psychiatry</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Pulmonology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Rheumatology</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Surgery</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" (click)="doctorsList()">
+                        <h3>Urology</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- List of Specialties section end -->
+
+
+
+    <!-- Offers Slider section start -->
+    <div class="offers_slider row  py-5 g-0">
+        <div class="banner_space d-none"></div>
+        <owl-carousel-o [options]="bannerCarousel">
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/5.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/6.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/7.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/8.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/5.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/6.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/7.png">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="assets/images/banners/8.png">
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <!-- Offers Slider section end -->
+
+
+    <!-- Doctor List start -->
+    <section class="vendorList themePadding">
+        <div class="sectionHeader">
+            <div class="container">
+                <h2 class="text-center text-lg-start">Best Doctors Available</h2>
+            </div>
+        </div>
+
+        <div class="sectionContent">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc1.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Joseph Williamson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital</h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star"></i> &nbsp; (152)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc3.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Anthony Peterson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Opus Hospital
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i> &nbsp; (199)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc2.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Angline Taylor</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Operum Clinics
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i> &nbsp; (240)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc4.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Elina George </h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Lisameth Hospital
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star "></i> &nbsp; (192)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc1.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Joseph Williamson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital</h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star"></i> &nbsp; (152)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc3.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Anthony Peterson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Opus Hospital
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i> &nbsp; (199)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Doctor List start -->
+
+    <!-- Today Discount start -->
+    <section class="discount">
+        <div class="container">
+            <div class="offer">
+                <div class="row align-items-center px-lg-4 px-xl-5">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <img src="assets/images/logo.png" class="img-fluid col-10 col-md-12 col-lg-8">
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <h2>Book an appointment with the best doctors available around you</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Today Discount end -->
+
+
+    <!-- Doctor List start -->
+    <section class="vendorList themePadding">
+        <div class="sectionHeader">
+            <div class="container">
+                <h2 class="text-center text-lg-start">Best Doctors Available</h2>
+            </div>
+        </div>
+
+        <div class="sectionContent">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc1.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Joseph Williamson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital</h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                    {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star"></i> &nbsp; (152)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc3.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Anthony Peterson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Opus Hospital
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                    {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i> &nbsp; (199)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc2.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Angline Taylor</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Operum Clinics
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                    {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i> &nbsp; (240)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc4.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Elina George </h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Lisameth Hospital
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                    {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star "></i> &nbsp; (192)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc1.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Joseph Williamson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital</h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                    {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star"></i> &nbsp; (152)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media pb-4" (click)="doctorInfo()">
+                            <div class="img_box center_img">
+                                <img src="assets/images/doctors/doc3.png" class="crop_img">
+                            </div>
+                            <div class="media-body">
+                                <h2>Dr. Anthony Peterson</h2>
+                                <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Opus Hospital
+                                </h3>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <h2>
+                                            {{'exp' | translate}}&nbsp;<strong>22
+                                                    {{'years' | translate}}</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="col-3">
+                                        <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong>
+                                        </h2>
+                                    </div>
+
+                                    <div class="d-flex col-5">
+                                        <h2 class="end">
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i>
+                                            <i class="zmdi zmdi-star active"></i> &nbsp; (199)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Doctor List start -->
+
+
+
+
+
+    <!-- Download app section start -->
+    <app-download-our-app> </app-download-our-app>
+    <!-- Download app section end -->
+
+    <!--Footer start -->
+    <app-footer></app-footer>
+    <!--Footer end -->
+</div>

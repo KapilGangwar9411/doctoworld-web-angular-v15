@@ -1,0 +1,276 @@
+<html [dir]="rtlSide">
+<header *ngIf="showHeader" class="pt-2" [ngClass]="toggleClass ? 'header active' : 'toggleClass'">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-0 w-100">
+        <div class="container d-block">
+            <div class="row g-0 w-100 align-items-center">
+                <div class="col-12 col-lg-5">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-6 col-xl-6">
+                            <div class="nav-item ml-xl-0 logo m-0">
+                                <a class="navbar-brand nav-link px-0 m-0" (click)="home()">
+                                    <img src="assets/images/logo.png" class="img-fluid d-block">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-6 d-flex">
+                            <div class="location d-none d-lg-flex">
+                                <i class="zmdi zmdi-pin"></i>
+                                <h3>New York</h3>
+                            </div>
+
+                            <div class="img_box center_img end d-lg-none" (click)="ToggleClass()">
+                                <img src="assets/images/profile.png" class="crop_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="location d-flex d-lg-none">
+                            <i class="zmdi zmdi-pin"></i>
+                            <h3>New York</h3>
+                        </div>
+
+                        <ul class="navbar-nav w-100">
+                            <div class="row g-0 w-100 align-items-center">
+
+                                <div class="col-12 col-lg-7 col-xl-7">
+                                    <div class="row g-0 w-100  gap-lg-3 gap-xl-5">
+
+                                        <div class="col-12 col-lg-auto col-xl-auto">
+                                            <li class="nav-item" (click)="home()">
+                                                <a class="nav-link d-flex">{{'medicine' | translate}}
+                                                    <i class="zmdi zmdi-chevron-right end d-lg-none text-end"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-12 col-lg-auto col-xl-auto" (click)="doctors()">
+                                            <li class="nav-item">
+                                                <a class="nav-link d-flex">{{'doctors' | translate}}
+                                                    <i class="zmdi zmdi-chevron-right end d-lg-none text-end"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-12 col-lg-auto col-xl-auto">
+                                            <li class="nav-item" (click)="hospitals()">
+                                                <a class="nav-link d-flex">{{'hospitals' | translate}}
+                                                    <i class="zmdi zmdi-chevron-right end d-lg-none text-end"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-12 col-lg-5 col-xl-5 d-flex">
+                                    <li class="nav-item d-flex align-items-center px-0 pt-3 pt-lg-0">
+                                        <button type="button" class="btn cart_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#my-cart" aria-controls="my-cart">
+                                            <i class="zmdi zmdi-shopping-cart text-start"></i>
+                                            {{'cart' | translate}}
+                                            <span>2</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item profile_info d-flex align-items-center px-0 pt-3 pt-lg-0" (click)="ToggleClass()">
+                                        <a>
+                                            <div class="img_box center_img">
+                                                <img src="assets/images/profile.png" class="crop_img">
+                                            </div>&nbsp;&nbsp;&nbsp; {{'my_account' | translate}}
+
+                                            <i class="zmdi zmdi-caret-down end"></i>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="moreOptions">
+        <div class="overlay" (click)="closeMenu()"></div>
+        <ul class="align-items-center pt-3">
+            <div class=" d-flex">
+                <li class="nav-item d-lg-none" (click)="closeMenu()">
+                    <div class="location d-flex">
+                        <i class="zmdi zmdi-pin"></i>
+                        <h3>New York</h3>
+                    </div>
+                </li>
+
+                <li class="nav-item d-lg-none" data-bs-toggle="offcanvas" type="button" data-bs-target="#my-cart" aria-controls="my-cart">
+                    <button type="button" class="btn cart_btn" type="button">
+                        <i class="zmdi zmdi-shopping-cart text-start"></i>
+                        {{'cart' | translate}}
+                        <span>2</span>
+                    </button>
+                </li>
+            </div>
+
+
+            <li class="nav-item d-lg-none" (click)="home()">
+                <a class="nav-link"> {{'medicine' | translate}}</a>
+            </li>
+
+            <li class="nav-item d-lg-none" (click)="doctors()">
+                <a class="nav-link"> {{'doctors' | translate}}</a>
+            </li>
+
+            <li class="nav-item d-lg-none" (click)="hospitals()">
+                <a class="nav-link"> {{'hospitals' | translate}}</a>
+            </li>
+
+            <li class="nav-item" (click)="my_account()">
+                <a class="nav-link"> {{'my_account' | translate}}</a>
+            </li>
+
+            <li class="nav-item" (click)="my_orders()">
+                <a class="nav-link"> {{'my_orders' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="my_appointment()">
+                <a class="nav-link"> {{'my_appointment' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="wallet()">
+                <a class="nav-link"> {{'wallet' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="my_offers()">
+                <a class="nav-link"> {{'my_offers' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="support()">
+                <a class="nav-link">{{'support' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="privacy_policy()">
+                <a class="nav-link">{{'privacy_policy' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="language()">
+                <a class="nav-link">{{'language' | translate}}</a>
+            </li>
+            <li class="nav-item" (click)="logout()">
+                <a class="nav-link">{{'logout' | translate}}</a>
+            </li>
+        </ul>
+    </div>
+
+</header>
+<div *ngIf="showHeader" class="header_spacebar"></div>
+<!-- Header End -->
+
+
+
+
+
+<!-- <section start my cart >  -->
+<div class="page_offcanvas offcanvas offcanvas-end my-cart" tabindex="-1" id="my-cart" aria-labelledby="my-cart">
+    <!-- <app-my-cart></app-my-cart> -->
+    <div class="offcanvas-header d-flex">
+        <h2>{{'my_cart' | translate}} </h2>
+        <h3 class="end" type="button" data-bs-dismiss="offcanvas" aria-label="Close">{{'close' | translate}}</h3>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="img_box center_img">
+                    <img src="assets/images/items/1.png" class="img-fluid">
+                </div>
+                <div class="text_box">
+                    <h2>Salospir 100mg Tablet</h2>
+                    <h3>{{'pack_of' | translate}} 500 gm</h3>
+                    <div class="d-flex align-items-center">
+                        <h4>
+                            <span>-</span>
+                            <strong>1</strong>
+                            <span>+</span>
+                        </h4>
+                        <h5 class="end">$3.50</h5>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="img_box center_img">
+                    <img src="assets/images/items/2.png" class="img-fluid">
+                </div>
+                <div class="text_box">
+                    <h2>Xenical 120mg Tablet</h2>
+                    <h3>{{'pack_of' | translate}} 100 gm</h3>
+                    <div class="d-flex align-items-center">
+                        <h4>
+                            <span>-</span>
+                            <strong>1</strong>
+                            <span>+</span>
+                        </h4>
+                        <h5 class="end">$3.00</h5>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="img_box center_img">
+                    <img src="assets/images/items/3.png" class="img-fluid">
+                </div>
+                <div class="text_box">
+                    <h2>Non Drosy Laritin Tablet</h2>
+                    <h3>{{'pack_of' | translate}} 120 gm</h3>
+                    <div class="d-flex align-items-center">
+                        <h4>
+                            <span>-</span>
+                            <strong>1</strong>
+                            <span>+</span>
+                        </h4>
+                        <h5 class="end">$3.50</h5>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="offcanvas-footer">
+        <form>
+            <div class="from_inner">
+                <div class="form-group animate__animated animate__fadeInUp wow">
+                    <div class="form-group-inner d-flex align-items-center">
+                        <input type="text" class="form-control" placeholder="{{'add_promo_code' | translate}}">
+                        <h3 class="end"> {{'apply' | translate}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="amount_info">
+                <h3 class="d-flex">
+                    {{'cart_total' | translate}}
+                    <span class="end">$10.00</span>
+                </h3>
+                <h3 class="d-flex">
+                    {{'delivery_fee' | translate}}
+                    <span class="end">$2.00</span>
+                </h3>
+                <h3 class="d-flex">
+                    {{'promo_code' | translate}}
+                    <span class="end">- $2.00</span>
+                </h3>
+            </div>
+        </form>
+        <div class="checkout_btn" type="button" data-bs-dismiss="offcanvas" aria-label="Close" (click)="checkout()">
+            <div class="row g-0 align-items-center w-100">
+                <div class="col-6">
+                    <h2>{{'checkout_now' | translate}}</h2>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <h3>{{'total' | translate}}</h3>
+                    <h2 class="end">$10.00
+                        <i class="zmdi zmdi-chevron-right text-end"></i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <section end my cart>  -->
+
+<router-outlet></router-outlet>
+
+</html>

@@ -1,0 +1,326 @@
+<div class="body_wrapper">
+    <!-- Banner section start -->
+    <div class="banner">
+        <div class="mainBanner position-relative z-3 pt-5">
+            <div class="container position-relative z-3 pt-3">
+                <div class="row gap-0 align-items-end position-relative z-3">
+                    <div class="col-12 col-lg-6   pb-5 mb-3">
+                        <h1 class="h-font pb-4 text-center pt-5 pt-lg-0 text-lg-start an-1" innerHtml="{{'find_hospital_around_you' | translate}}"></h1>
+                        <p class="pb-5 text-center text-lg-start ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> sed do eiusmod tempor.
+                        </p>
+                        <form class="col-12 col-lg-10 px-0" role="search">
+                            <div class="form-group search_box mb-0">
+                                <div class="form-group-inner d-flex align-items-center mb-0">
+                                    <input type="search" class="form-control" placeholder="{{'search_hospital' | translate}}">
+                                    <button class="btn" type="submit" (click)="hospitalList()">
+                                        <i class="zmdi zmdi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="col-12 col-lg-6 text-center" style="overflow: hidden">
+                        <img src="assets/images/doctor_banner.png" class="img-fluid col-10 col-lg-12">
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="banner_img">
+                <div class="row gap-0 align-items-end">
+                    <div class="col-12 col-lg-5">
+
+                    </div>
+                    <div class="col-12 col-lg-7 text-end">
+                        <img src="assets/images/hospital_banner.png" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features section start -->
+
+
+        <!-- category section start -->
+        <div class="category">
+            <div class="container">
+                <owl-carousel-o [options]="categoryCarousel">
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Hospitals
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Dentist
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Ayurvedic
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+                    <ng-template carouselSlide class="animate__animated animate__zoomIn wow">
+                        <h3>
+                            <a class="d-flex align-items-center">
+                                Surgeon
+                                <i class="zmdi zmdi-chevron-down text-end"></i>
+                            </a>
+                        </h3>
+                    </ng-template>
+
+                </owl-carousel-o>
+            </div>
+        </div>
+        <!-- category section end -->
+    </div>
+    <!-- Banner section end -->
+
+
+    <!-- Map start end -->
+
+    <section class="find_on_map">
+        <div class="map">
+            <img src="assets/images/map.png" class="img-fluid">
+            <div class="pin" style="left: 10%; top: 10%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+            <div class="pin" style="left: 40%; top: 30%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+            <div class="pin" style="left: 24%; top: 73%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+            <div class="pin" style="left: 54%; top: 47%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+            <div class="pin" style="left: 85%; top: 19%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+            <div class="pin" style="left: 80%; top: 82%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+            <div class="pin" style="left: 89%; top: 69%;">
+                <img src="assets/images/icons/ic_hospital_pin.png" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- Map section end -->
+
+
+    <!-- Hospital List start -->
+    <section class="vendorList themePadding">
+        <!-- <div class="sectionHeader">
+            <div class="container">
+                <h2 class="text-center text-lg-start">Best Doctors Available</h2>
+            </div>
+        </div> -->
+
+        <div class="sectionContent py-2">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/1.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>Apple Hospital</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Walter street, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/1.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>Apple Hospital</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Walter street, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/1.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>Apple Hospital</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Walter street, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/2.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>City Light Eye Care</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Jespora Bridge, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/2.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>City Light Eye Care</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Jespora Bridge, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/2.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>City Light Eye Care</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Jespora Bridge, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/3.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>Silver Soul Hospital</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Walter street, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/3.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>Silver Soul Hospital</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Walter street, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 animate__animated animate__zoomIn wow">
+                        <div class="media d-block" (click)="hospitalInfo()">
+                            <div class="media-body">
+                                <div class="media-header d-flex align-items-center">
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/hospital/3.png" class="crop_img">
+                                    </div>
+                                    <div class="text_box">
+                                        <h2>Silver Soul Hospital</h2>
+                                        <h3>General Hospital</h3>
+                                    </div>
+                                </div>
+                                <h3 class="d-flex">
+                                    <i class="zmdi zmdi-pin text-start"></i> Walter street, Wallington, New York.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hospital List end -->
+
+    <!-- Today Discount start -->
+    <section class="discount themePadding pt-0">
+        <div class="container">
+            <div class="offer">
+                <div class="row align-items-center px-lg-4 px-xl-5">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <img src="assets/images/logo.png" class="img-fluid col-10 col-md-12 col-lg-8">
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <h2>Find and get Best Hospital & Doctors around you.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Today Discount end -->
+
+
+    <!-- Download app section start -->
+    <app-download-our-app> </app-download-our-app>
+    <!-- Download app section end -->
+
+    <!--Footer start -->
+    <app-footer></app-footer>
+    <!--Footer end -->
+</div>

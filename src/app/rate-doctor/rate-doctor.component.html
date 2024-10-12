@@ -1,0 +1,63 @@
+<!-- track order section start -->
+
+<div class="row g-0 d-flex">
+    <div class="col-12 col-md-6 col-xl-3 mx-auto my-auto">
+        <div class="send_to_bank">
+            <div class="header d-flex">
+                <i class="zmdi zmdi-close" (click)="close()"></i>
+                <h2>{{'rate_doctor' | translate}} </h2>
+            </div>
+            <form class=" px-0">
+                <div class="card pt-3">
+                    <div class="media pb-2 d-flex align-items-center">
+                        <div class="img_box center_img">
+                            <img src="assets/images/doctors/doc1.png" class="crop_img">
+                        </div>
+                        <div class="media-body">
+                            <h2 class="d-flex">Dr. Joseph Williamson
+                            </h2>
+                            <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital</h3>
+                        </div>
+                    </div>
+
+                    <div class="overall_experience animate__animated animate__fadeInUp px-3">
+                        <h2>{{'overall_experience' | translate}}</h2>
+                        <div class="rate">
+                            <span [ngClass]="ratingIcon1 ? 'icon_box active' : 'icon_box'" (click)="toggleRatingIcon1()">
+                                <i class="zmdi zmdi-star"></i>
+                            </span>
+                            <span [ngClass]="ratingIcon2 ? 'icon_box active' : 'icon_box'" (click)="toggleRatingIcon2()">
+                                <i class="zmdi zmdi-star"></i>
+                            </span>
+                            <span [ngClass]="ratingIcon3 ? 'icon_box active' : 'icon_box'" (click)="toggleRatingIcon3()">
+                                <i class="zmdi zmdi-star"></i>
+                            </span>
+                            <span [ngClass]="ratingIcon4 ? 'icon_box active' : 'icon_box'" (click)="toggleRatingIcon4()">
+                                <i class="zmdi zmdi-star"></i>
+                            </span>
+                            <span [ngClass]="ratingIcon5 ? 'icon_box active' : 'icon_box'" (click)="toggleRatingIcon5()">
+                                <i class="zmdi zmdi-star"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="add_feedback animate__animated animate__fadeInUp px-3">
+                        <h2>{{'add_feedback' | translate}}</h2>
+                        <div class="from_inner">
+                            <div class="form-group ">
+                                <div class="form-group-inner">
+                                    <textarea type="text" rows="5" class="form-control">{{'write_your_feedback' | translate}}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn end animate__animated animate__fadeInUp" (click)="close()">
+                        {{'submit' | translate}}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- track order section start -->

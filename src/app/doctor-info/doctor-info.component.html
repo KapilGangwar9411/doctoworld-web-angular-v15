@@ -1,0 +1,550 @@
+<div class="body_wrapper">
+    <section class="itemRow pt-4 themePadding">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-lg-8 ">
+                    <div class="card px-4 pb-4">
+                        <div class="row g-0 align-items-end px-2">
+                            <div class="itemImg  col-12 col-md-3">
+                                <img src="assets/images/doctors/doc1.png" class="img-fluid crop_img">
+                            </div>
+                            <div class="text_box col-12 col-md-9">
+                                <h2 class="d-flex">
+                                    Dr. Joseph Williamson
+                                </h2>
+                                <h3 class="pb-4 ">Cardiac Surgeon</h3>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3 pt-2 pb-2">
+                                        <h3 class="pb-2">{{'experience' | translate}}</h3>
+                                        <h5>18 Years</h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 pt-2 pb-2">
+                                        <h3 class="pb-2">{{'consultancy_fees' | translate}}</h3>
+                                        <h5>$28</h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 pt-2 pb-2">
+                                        <h3 class="pb-2">{{'feedbacks' | translate}}</h3>
+                                        <h4 class="d-flex align-items-center">
+                                            <i class="zmdi zmdi-star"></i> 4.5
+                                            <span>&nbsp;&nbsp;(124)</span>
+                                        </h4>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 pt-2 pb-2">
+                                        <h3 class="pb-2">{{'availability' | translate}}</h3>
+                                        <h5>12:00 to 13:00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- About & Reviews start -->
+
+                    <ul class="nav">
+                        <li class="nav-item" [ngClass]="toggleClass1 ? 'active' : '' " (click)="about()">
+                            <a class="nav-link">
+                                {{'about' | translate}}
+                            </a>
+                        </li>
+                        <li class="nav-item" [ngClass]="toggleClass2 ? 'active' : '' " (click)="feedbacks()">
+                            <a class="nav-link">
+                                {{'feedbacks' | translate}}
+                            </a>
+                        </li>
+                        <li class="nav-item" [ngClass]="toggleClass3 ? 'active' : '' " (click)="availability()">
+                            <a class="nav-link">
+                                {{'availability' | translate}}
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab_content">
+                        <!-- About section start -->
+                        <div class="p-5 py-4 card" *ngIf="showSection == 1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+
+                            <div class="vendorList services_at pb-3">
+                                <h3>{{'services_at' | translate}}</h3>
+                                <div class="media mb-3" (click)="hospitalInfo()" style="cursor: pointer !important;">
+                                    <div class="media-body w-100">
+                                        <h2>Apple Hospital</h2>
+                                        <h5 class="d-flex align-items-center">
+                                            JJ towers, Johnson street, Hemilton, New York
+                                            <i class="zmdi zmdi-chevron-right end text-end"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="media mb-3" (click)="hospitalInfo()" style="cursor: pointer !important;">
+                                    <div class="media-body w-100">
+                                        <h2>Seven Star Clinic</h2>
+                                        <h5 class="d-flex align-items-center">
+                                            Hemilton Brige City Point, Hemilton, New York
+                                            <i class="zmdi zmdi-chevron-right end text-end"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vendorList services_at">
+                                <h3>{{'services' | translate}}</h3>
+                                <div class="media">
+                                    <div class="media-body pt-0">
+                                        <h2 class="p-0 pb-2">Hypertension Treatment</h2>
+                                        <h2 class="p-0 pb-2">COPD Treatment</h2>
+                                        <h2 class="p-0 pb-2">Diabetes Management</h2>
+                                        <h2 class="p-0 pb-2">ECG</h2>
+                                        <h2 class="p-0 pb-2">Obesity Treatment</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- About section end -->
+
+                        <!-- feedbacks start -->
+                        <div class="p-5 py-4 card" *ngIf="showSection == 2">
+                            <ul class="list-group">
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>George Timber</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 4.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Emili Johnson</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 5.0
+                                        <span class="end">23 Feb, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Jackson Demmy</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 4.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Opera Taylor</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 5.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>George Timber</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 4.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Emili Johnson</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 5.0
+                                        <span class="end">23 Feb, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Jackson Demmy</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 4.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Opera Taylor</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 5.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>George Timber</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 4.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Emili Johnson</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 5.0
+                                        <span class="end">23 Feb, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Jackson Demmy</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 4.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item animate__animated animate__fadeInUp wow">
+                                    <h2>Opera Taylor</h2>
+                                    <h3 class="d-flex">
+                                        <i class="zmdi zmdi-star"></i> 5.0
+                                        <span class="end">5 April, 20</span>
+                                    </h3>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- feedbacks end -->
+
+                        <!-- Availability start -->
+                        <div class="p-5 py-4 card availability" *ngIf="showSection == 3">
+                            <div class="vendorList services_at pb-3">
+                                <h3 class="mb-0">{{'services_at' | translate}}</h3>
+                                <div class="media">
+                                    <div class="media-body w-100">
+                                        <h2>Apple Hospital</h2>
+                                        <h5 class="d-flex align-items-center">
+                                            JJ towers, Johnson street, Hemilton, New York
+                                        </h5>
+                                    </div>
+                                </div>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Mon
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Tue
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Wed
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Thu
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Fri
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Sat
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Sun
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="vendorList services_at pb-3">
+                                <h3 class="mb-0">{{'services_at' | translate}}</h3>
+                                <div class="media">
+                                    <div class="media-body w-100">
+                                        <h2>Seven Star Clinic</h2>
+                                        <h5 class="d-flex align-items-center">
+                                            Hemilton Brige City Point, Hemilton, New York
+                                        </h5>
+                                    </div>
+                                </div>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Mon
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Tue
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Wed
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Thu
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Fri
+                                            <span class="end"><small>{{'not_available' | translate}}</small></span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Sat
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                    <li class="list-group-item  animate__animated animate__fadeInUp wow">
+                                        <h3 class="mb-0 d-flex">
+                                            Sun
+                                            <span class="end">12:00 <small>to</small> 20:00</span>
+                                        </h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Availability end -->
+                    </div>
+                    <!-- About & Reviews end -->
+                </div>
+
+
+                <div class="col-12 col-lg-4">
+                    <div class="book_an_appointment">
+                        <div class="card px-4 py-4">
+                            <h2 class="pb-4 pt-2 ">{{'book_an_appointment' | translate}}</h2>
+
+                            <form>
+                                <div class="selectDateTime">
+                                    <h2 class="d-flex">{{'select_date' | translate}}
+                                        <span class="end">June 2020</span>
+                                    </h2>
+                                    <div class="from_inner">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" checked type="radio" id="1" value="1" name="select_date">
+                                                <label class="form-check-label" for="1">
+                                                    <span>WED </span>12
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="2" value="2" name="select_date">
+                                                <label class="form-check-label" for="2">
+                                                    <span>THU</span>13
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="3" value="3" name="select_date">
+                                                <label class="form-check-label" for="3">
+                                                    <span>FRI</span>14
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="4" value="4" name="select_date">
+                                                <label class="form-check-label" for="4">
+                                                    <span>Sat</span>15
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="5" value="5" name="select_date">
+                                                <label class="form-check-label" for="5">
+                                                    <span>Sun</span>16
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="6" value="6" name="select_date">
+                                                <label class="form-check-label" for="6">
+                                                    <span>Mon</span> 17
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="7" value="7" name="select_date">
+                                                <label class="form-check-label" for="7">
+                                                    <span>Tue</span>18
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <h2 class="d-flex">{{'select_time' | translate}}
+                                    </h2>
+                                    <div class="from_inner select_time">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" checked type="radio" id="select_time1" value="select_time1" name="select_time">
+                                                <label class="form-check-label" for="select_time1">
+                                                    09:00 am
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="select_time2" value="select_time2" name="select_time">
+                                                <label class="form-check-label" for="select_time2">
+                                                    09:30 am
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="select_time3" value="select_time3" name="select_time">
+                                                <label class="form-check-label" for="select_time3">
+                                                    10:00 am
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="select_time4" value="select_time4" name="select_time">
+                                                <label class="form-check-label" for="select_time4">
+                                                    10:30 am
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="select_time5" value="select_time5" name="select_time">
+                                                <label class="form-check-label" for="select_time5">
+                                                    11:00 am
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="select_time6" value="select_time6" name="select_time">
+                                                <label class="form-check-label" for="select_time6">
+                                                    11:30 am
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="select_time7" value="select_time7" name="select_time">
+                                                <label class="form-check-label" for="select_time7">
+                                                    12:00 pm
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <h2>{{'appointmnt_for' | translate}}</h2>
+                                <div class="from_inner mx-auto">
+                                    <div class="form-group ">
+                                        <div class="form-group-inner d-flex align-items-center">
+                                            <input type="text" class="form-control" placeholder="e.g {{'heart_pain_body_ache_etc' | translate}}.">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2>{{'attach_document' | translate}} (eg photo, report.etc)</h2>
+                                <div class="from_inner mx-auto">
+                                    <div class="form-group attach_document">
+                                        <div class="form-group-inner d-flex align-items-center">
+                                            <i class="zmdi zmdi-attachment-alt"></i>
+                                            <input type="file" class="form-control" placeholder="{{'attach_now' | translate}}.">
+                                            <h3>{{'attach_now' | translate}}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn" (click)="appointmentBooked()">
+                                    {{'book_appointment' | translate}} 
+                              </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Download app section start -->
+    <app-download-our-app> </app-download-our-app>
+    <!-- Download app section end -->
+
+    <!--Footer start -->
+    <app-footer></app-footer>
+    <!--Footer end -->
+</div>

@@ -1,0 +1,80 @@
+.vendorList {
+    .media {
+        border-radius: 15px;
+        margin-bottom: 15px;
+        .img_box {
+            min-width: 80px;
+            height: 95px;
+            border-radius: 6px;
+        }
+        .media-body {
+            width: 100%;
+            h2 {
+                padding-bottom: 10px;
+            }
+            h3 {
+                margin: 0;
+                color: var(--text-light2);
+                font-size: 0.8rem;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                min-height: 40px;
+                font-weight: 500;
+                span {
+                    font-size: 0.73rem;
+                    font-weight: 400;
+                    color: var(--text-light);
+                }
+            }
+            .row {
+                h2 {
+                    margin: 0;
+                    font-size: 0.73rem;
+                    font-weight: 400;
+                    color: var(--text-light2);
+                    display: flex;
+                    align-content: center;
+                    padding: 0;
+                    align-content: center;
+                    strong {
+                        color: var(--text-black);
+                        font-weight: 500;
+                    }
+                    i {
+                        color: #dddddd;
+                        font-size: 0.8rem;
+                        &.active {
+                            color: var(--yelow-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map {
+    min-height: 745px;
+    img {
+        height: 100%;
+        max-width: unset;
+    }
+    .doctor {
+        position: absolute;
+        z-index: 99;
+        min-width: 65px;
+        height: 80px;
+        // border-radius: 6px;
+        cursor: pointer;
+        transition: all .5s;
+        img {
+            max-width: 100%;
+        }
+        &:hover {
+            box-shadow: 0 15px 15px -2px rgb(47 47 47 / 18%);
+            transform: scale(1.03);
+        }
+    }
+}

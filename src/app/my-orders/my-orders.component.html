@@ -1,0 +1,282 @@
+<div class="body_wrapper">
+    <!-- Banner section start -->
+    <div class="pageTitle">
+        <div class="container position-relative">
+            <h1 class="text-center py-5 pb-4 text-md-start">
+                {{'my_orders' | translate}}
+            </h1>
+        </div>
+    </div>
+
+    <section class="themePadding  pt-2">
+        <div class="container order_info_container">
+            <div class="container_inner">
+                <div class="row g-0">
+                    <!-- Appointments list section start -->
+                    <div class="col-12 col-lg-5 col-xl-5">
+                        <div class="order_list">
+                            <div class="vendorList">
+                                <h5>{{'in_process' | translate}}</h5>
+                                <div class="media" [ngClass]="addClass1 ? 'active' : '' " (click)=showAppointment1()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/vendor/1.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Well Life Store
+                                            <span class="end in_transist">{{'in_transist' | translate}}</span>
+                                        </h2>
+                                        <h3 class="d-flex">
+                                            13 June, 11:20 am
+                                            <span class="end">$18.00 | COD</span>
+                                        </h3>
+                                        <div class="item d-flex align-items-end">
+                                            <div class="w-100">
+                                                <h4>Salospir 100mg Tablet</h4>
+                                                <h4>Non Drosy Laritin Tablet</h4>
+                                                <h4>Xenical 12mg Tablet</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="media" [ngClass]="addClass2 ? 'active' : '' " (click)=showAppointment2()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/vendor/2.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Helthyfy Medicals
+                                            <span class="end confirmed">{{'confirmed' | translate}}</span>
+                                        </h2>
+                                        <h3 class="d-flex">
+                                            13 June, 12:20 am
+                                            <span class="end">$10.00 | PayPal</span>
+                                        </h3>
+                                        <div class="item d-flex align-items-end">
+                                            <div class="w-100">
+                                                <h4>Non Drosy Laritin Tablet</h4>
+                                                <h4>Xenical 12mg Tablet</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5>{{'past' | translate}}</h5>
+
+                                <div class="media" [ngClass]="addClass3 ? 'active' : '' " (click)=showAppointment3()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/vendor/1.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Well Life Store
+                                            <span class="end delivered">{{'delivered' | translate}}</span>
+                                        </h2>
+                                        <h3 class="d-flex">
+                                            13 June, 11:20 am
+                                            <span class="end">$18.00 | COD</span>
+                                        </h3>
+                                        <div class="item d-flex align-items-end">
+                                            <div class="w-100">
+                                                <h4>Salospir 100mg Tablet</h4>
+                                                <h4>Non Drosy Laritin Tablet</h4>
+                                                <h4>Xenical 12mg Tablet</h4>
+                                            </div>
+                                            <h5 class="end" (click)=review_now()>{{'review_now' | translate}}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="media" [ngClass]="addClass4 ? 'active' : '' " (click)=showAppointment4()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/vendor/1.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Well Life Store
+                                            <span class="end delivered">{{'delivered' | translate}}</span>
+                                        </h2>
+                                        <h3 class="d-flex">
+                                            13 June, 11:20 am
+                                            <span class="end">$18.00 | COD</span>
+                                        </h3>
+                                        <div class="item d-flex align-items-end">
+                                            <div class="w-100">
+                                                <h4 class="d-flex">
+                                                    Non Drosy Laritin Tablet
+                                                    <span class="end"> 
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star"></i>
+                                            </span>
+                                                </h4>
+                                                <h4 class="d-flex">Xenical 12mg Tablet
+                                                    <span class="end"> 
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star active"></i>
+                                                <i class="zmdi zmdi-star"></i>
+                                            </span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointments list section end -->
+
+
+                    <!-- Appointment info section start -->
+                    <div class="col-12 col-lg-7 col-xl-7 pt-5 pt-lg-3">
+                        <div class="appointment_placeholder text-center pt-5" *ngIf="showSection == 1" [ngClass]="toggleClass ? 'active' : '' ">
+                            <div class="close d-lg-none" (click)="hideAppointmentPlaceholder()">
+                                <i class="zmdi zmdi-close"></i>
+                            </div>
+                            <div class="appointment_placeholder_inner">
+                                <img src="assets/images/myorder_placeholder.png" class="mb-4 img-fluid col-lg-8">
+                                <h2>{{'click_on_order_to_view_details' | translate}} </h2>
+                            </div>
+                        </div>
+
+                        <div class="appointment_info pt-lg-0" [ngClass]="appointmentInfo ? 'active' : '' " *ngIf="showSection == 2">
+                            <br>
+                            <div class="card px-1 px-lg-4 py-4">
+                                <div class="close d-lg-none text-end" (click)="closeAppointmentInfoModel()">
+                                    <h3>{{'close' | translate}} </h3>
+                                </div>
+                                <div class="order_list">
+                                    <div class="vendorList">
+                                        <div class="media p-0">
+                                            <div class="img_box center_img">
+                                                <img src="assets/images/vendor/1.png" class="crop_img">
+                                            </div>
+                                            <div class="media-body">
+                                                <h2 class="d-flex">Well Life Store
+                                                    <span class="end in_transist">{{'in_transist' | translate}}</span>
+                                                </h2>
+                                                <h3 class="d-flex">
+                                                    13 June, 11:20 am
+                                                    <span class="end">$18.00 | COD</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order_process">
+                                    <div class="process d-flex active">
+                                        <div class="icon_box">
+                                            <i class="zmdi zmdi-circle-o"></i>
+                                            <i class="zmdi zmdi-check-circle"></i>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="text_box">
+                                            <h2>{{'order_confirmed' | translate}}</h2>
+                                            <h3>3:45 | 20 June 2020</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="process d-flex active">
+                                        <div class="icon_box">
+                                            <i class="zmdi zmdi-circle-o"></i>
+                                            <i class="zmdi zmdi-check-circle"></i>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="text_box">
+                                            <h2>{{'order_picked' | translate}}</h2>
+                                            <h3>4:32 | 20 June 2020</h3>
+                                        </div>
+                                        <h5 class="end" (click)="trackOrder()">
+                                            <i class="zmdi zmdi-navigation"></i> {{'track' | translate}}
+                                        </h5>
+                                    </div>
+
+                                    <div class="process d-flex">
+                                        <div class="icon_box">
+                                            <i class="zmdi zmdi-circle-o"></i>
+                                            <i class="zmdi zmdi-check-circle"></i>
+                                        </div>
+                                        <div class="text_box">
+                                            <h2>{{'order_delivered' | translate}}</h2>
+                                            <h3>{{'yet_to_delivered' | translate}}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ordered_items">
+                                    <h5>{{'ordered_items' | translate}}</h5>
+
+                                    <div class="item">
+                                        <h2 class="d-flex">Salospir 100mg Tablet</h2>
+                                        <h3 class="d-flex">2 Packs
+                                            <span class="end">$6.00</span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="item">
+                                        <h2 class="d-flex">Non Drosy Laritin Tablet &nbsp;&nbsp;&nbsp;<img src="assets/images/icons/px.png"></h2>
+                                        <h3 class="d-flex">1 Pack
+                                            <span class="end">$8.00</span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="item">
+                                        <h2 class="d-flex">Xenical 120mg Tablet &nbsp;&nbsp;&nbsp;
+                                            <img src="assets/images/icons/px.png">
+                                        </h2>
+                                        <h3 class="d-flex">1 Pack
+                                            <span class="end">$4.00</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="prescription d-flex">
+                                    <img src="assets/images/icons/px.png">&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <h2>{{'prescription_uploaded' | translate}}</h2>
+                                    <i class="zmdi zmdi-eye end text-end"></i>
+                                </div>
+
+                                <div class="payment_info">
+                                    <div class="item">
+                                        <h2 class="d-flex">{{'sub_total' | translate}}
+                                            <span class="end">$18.00</span>
+                                        </h2>
+                                    </div>
+                                    <div class="item">
+                                        <h2 class="d-flex">{{'promo_code_applied' | translate}}
+                                            <span class="end">-$2.00</span>
+                                        </h2>
+                                    </div>
+                                    <div class="item">
+                                        <h2 class="d-flex">{{'service_charge' | translate}}
+                                            <span class="end">$4.00</span>
+                                        </h2>
+                                    </div>
+                                    <div class="item">
+                                        <h2 class="d-flex" style="color: var(--text-black); font-size: 1.1rem;">{{'amount_via' | translate}} COD
+                                            <span class="end">$20.00</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment info section end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download app section start -->
+    <app-download-our-app> </app-download-our-app>
+    <!-- Download app section end -->
+
+    <!--Footer start -->
+    <app-footer></app-footer>
+    <!--Footer end -->
+</div>

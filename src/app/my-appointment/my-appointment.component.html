@@ -1,0 +1,214 @@
+<div class="body_wrapper">
+    <!-- Banner section start -->
+    <div class="pageTitle">
+        <div class="container position-relative">
+            <h1 class="text-center py-5 pb-4 text-md-start">
+                {{'my_appointment' | translate}}
+            </h1>
+        </div>
+    </div>
+
+    <section class="themePadding  pt-2">
+        <div class="container order_info_container">
+            <div class="container_inner">
+                <div class="row g-0">
+                    <!-- Appointments list section start -->
+                    <div class="col-12 col-lg-5 col-xl-5">
+                        <div class="order_list">
+                            <div class="vendorList">
+                                <h5>{{'upcoming' | translate}}</h5>
+                                <div class="media pb-2" [ngClass]="addClass1 ? 'active' : '' " (click)=showAppointment1()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/doctors/doc1.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Dr. Joseph Williamson
+                                            <i class="zmdi zmdi-more-vert end"></i>
+                                        </h2>
+                                        <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital</h3>
+                                        <h4 class="d-flex">
+                                            14 June 2020 | 12:00 pm
+
+                                            <span class="icon_box end">
+                                                <i class="zmdi zmdi-phone text-start"></i>
+                                                <i class="zmdi  zmdi-comment-alt-text text-end"></i>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="media pb-2" [ngClass]="addClass2 ? 'active' : '' " (click)=showAppointment2()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/doctors/doc3.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Dr. Anthony Peterson
+                                            <i class="zmdi zmdi-more-vert end"></i>
+                                        </h2>
+
+                                        <h3> Cardiac Surgeon <span>{{'at' | translate}}</span> Opus Hospital
+                                        </h3>
+                                        <h4 class="d-flex">
+                                            12 June 2020 | 2:30 pm
+
+                                            <span class="icon_box end">
+                                                <i class="zmdi zmdi-phone text-start"></i>
+                                                <i class="zmdi  zmdi-comment-alt-text text-end"></i>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <h5>{{'past' | translate}}</h5>
+
+                                <div class="media pb-2" [ngClass]="addClass3 ? 'active' : '' " (click)=showAppointment3()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/doctors/doc2.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Dr. Angline Taylor
+                                            <i class="zmdi zmdi-more-vert end"></i>
+                                        </h2>
+                                        <h3> Physician Therapist<span>{{'at' | translate}}</span> Silver Soul Hospital
+                                        </h3>
+                                        <h4 class="d-flex">
+                                            28 May 2020 | 12:00 pm
+                                            <span class="icon_box end">
+                                                <i class="zmdi zmdi-phone text-start"></i>
+                                                <i class="zmdi  zmdi-comment-alt-text text-end"></i>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="media pb-2" [ngClass]="addClass4 ? 'active' : '' " (click)=showAppointment4()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/doctors/doc4.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Dr. Elina George
+                                            <i class="zmdi zmdi-more-vert end"></i>
+                                        </h2>
+                                        <h3> Cardiac Surgeon<span>{{'at' | translate}}</span> Operum Clnics
+                                        </h3>
+                                        <h4 class="d-flex">
+                                            11 May 2020 | 2:30 pm
+                                            <span class="icon_box end">
+                                                <i class="zmdi zmdi-phone text-start"></i>
+                                                <i class="zmdi  zmdi-comment-alt-text text-end"></i>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media pb-2" [ngClass]="addClass5 ? 'active' : '' " (click)=showAppointment5()>
+                                    <div class="img_box center_img">
+                                        <img src="assets/images/doctors/doc1.png" class="crop_img">
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="d-flex">Dr. Joseph Williamson
+                                            <i class="zmdi zmdi-more-vert end"></i>
+                                        </h2>
+                                        <h3> Cardiac Surgeon<span>{{'at' | translate}}</span> Apple Hospital
+                                        </h3>
+                                        <h4 class="d-flex">
+                                            26 April 2020 | 10:00 am
+                                            <span class="icon_box end">
+                                                <i class="zmdi zmdi-phone text-start"></i>
+                                                <i class="zmdi  zmdi-comment-alt-text text-end"></i>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointments list section end -->
+
+
+                    <!-- Appointment info section start -->
+                    <div class="col-12 col-lg-7 col-xl-7 pt-5 pt-lg-3">
+                        <div class="appointment_placeholder text-center pt-5" *ngIf="showSection == 1" [ngClass]="toggleClass ? 'active' : '' ">
+                            <div class="close d-lg-none" (click)="hideAppointmentPlaceholder()">
+                                <i class="zmdi zmdi-close"></i>
+                            </div>
+                            <div class="appointment_placeholder_inner">
+                                <img src="assets/images/myappointment_placeholder.png" class="mb-4 img-fluid col-lg-8">
+                                <h2>{{'click_on_appointment_to_view_details' | translate}} </h2>
+                            </div>
+                        </div>
+
+                        <div class="appointment_info pt-lg-0" [ngClass]="appointmentInfo ? 'active' : '' " *ngIf="showSection == 2">
+                            <br>
+                            <div class="card px-4 py-4">
+                                <div class="close d-lg-none" (click)="closeAppointmentInfoModel()">
+                                    <h3>{{'close' | translate}} </h3>
+                                </div>
+
+                                <div class="row g-0 align-items-center px-0 pb-5 px-xl-3">
+                                    <div class="itemImg col-12 col-md-3 col-lg-5 col-xl-3">
+                                        <img src="assets/images/doctors/doc1.png" class="img-fluid crop_img">
+                                    </div>
+                                    <div class="text_box col-12 col-md-9 col-lg-7 col-xl-9 pt-4 pt-lg-0">
+                                        <h2 class="d-flex">
+                                            Dr. Joseph Williamson
+                                        </h2>
+                                        <h3>Cardiac Surgeon <br>{{'at' | translate}} Apple Hospital</h3>
+
+                                        <h6 (click)="rateDoctor()">{{'review_now' | translate}}</h6>
+                                    </div>
+                                </div>
+
+                                <div class="info px-xl-3">
+                                    <div class="text_box">
+                                        <h3>{{'appointment_on' | translate}}</h3>
+                                        <h2>12 June 2020 | 12:00 pm</h2>
+                                    </div>
+
+                                </div>
+                                <div class="info px-xl-3">
+                                    <div class="text_box">
+                                        <h3>{{'location' | translate}}</h3>
+                                        <h2 class="pb-2">Apple Hospital</h2>
+                                        <h4>Walter Street, Wallington, New York.</h4>
+                                    </div>
+                                </div>
+                                <div class="info px-xl-3">
+                                    <div class="text_box">
+                                        <h3>{{'appointment_for' | translate}}</h3>
+                                        <h2>Chest Pain</h2>
+                                    </div>
+                                </div>
+                                <div class="info px-xl-3">
+                                    <div class="row g-0 align-items-end">
+                                        <div class="col-12 col-md-6 col-lg-8">
+                                            <div class="text_box">
+                                                <h3>{{'appointment_for' | translate}}</h3>
+                                                <h2>report221220.pdf</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="text_box d-flex d-block d-md-flex">
+                                                <h2 class="ml-0 pt-3 pt-md-0 end" style="cursor: pointer; color: var(--primary);">
+                                                    <i class="zmdi zmdi-download text-start"></i> {{'download' | translate}}
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment info section end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download app section start -->
+    <app-download-our-app> </app-download-our-app>
+    <!-- Download app section end -->
+
+    <!--Footer start -->
+    <app-footer></app-footer>
+    <!--Footer end -->
+</div>
