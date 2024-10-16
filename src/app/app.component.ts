@@ -105,7 +105,7 @@ export class AppComponent {
     this.router.navigateByUrl('wallet');
     this.toggleClass = false;
   }
- 
+
   support() {
     this.router.navigateByUrl('support');
     this.toggleClass = false;
@@ -122,7 +122,7 @@ export class AppComponent {
     this.router.navigateByUrl('sign-in');
     this.toggleClass = false;
   }
-  
+
   checkout() {
     this.router.navigateByUrl('checkout');
     this.toggleClass = false;
@@ -132,21 +132,21 @@ export class AppComponent {
     this.router.navigateByUrl('vendor-info');
     this.toggleClass = false;
   }
- 
+
   // home2() {
   //   this.router.navigateByUrl('home');
   //   this.toggleClass = !this.toggleClass;
   // }
- 
+
   ToggleClass() {
     this.toggleClass = !this.toggleClass;
- 
+
   }
   closeMenu() {
     this.toggleClass = false;
   }
 
-  
+
   darkModeSetting() {
     document.body.setAttribute('class', (Helper.getThemeMode(this.config.defaultThemeMode) == Constants.THEME_MODE_DARK ? 'dark-theme' : 'light-theme'));
   }

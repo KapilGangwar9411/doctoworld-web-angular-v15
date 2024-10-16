@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component'; 
+import { HomeComponent } from './home/home.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
-import { SignInComponent } from './sign-in/sign-in.component'; 
+import { SignInComponent } from './sign-in/sign-in.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderPlacedComponent } from './order-placed/order-placed.component';
 import { MyAccountComponent } from './my-account/my-account.component';
@@ -23,13 +23,13 @@ import { AppointmentBookedComponent } from './appointment-booked/appointment-boo
 import { HospitalListComponent } from './hospital-list/hospital-list.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { SendToBankComponent } from './send-to-bank/send-to-bank.component';
-        
+
 
 const routes: Routes = [
-  { path: "", redirectTo: "sign-in", pathMatch: "full" }, 
-  { path: "home", component: HomeComponent }, 
+  { path: "", redirectTo: "sign-in", pathMatch: "full" },
+  { path: "home", component: HomeComponent },
   { path: "my-orders", component: MyOrdersComponent },
-  { path: "sign-in", component: SignInComponent }, 
+  { path: "sign-in", component: SignInComponent },
   { path: "checkout", component: CheckoutComponent },
   { path: "order-placed", component: OrderPlacedComponent },
   { path: "my-account", component: MyAccountComponent },

@@ -9,17 +9,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AddAddressComponent {
   address: string = '';
-  title: string = 'Farm House';
+  title: string = 'Home';
   errorMessage: string = '';
 
   constructor(private activeModal: NgbActiveModal, private http: HttpClient) { }
 
-  // Function to dismiss the modal
+
   dismiss() {
     this.activeModal.close();
   }
 
-  // Function to get user's current location
   getLocation() {
     console.log("Attempting to get location...");
     if (navigator.geolocation) {

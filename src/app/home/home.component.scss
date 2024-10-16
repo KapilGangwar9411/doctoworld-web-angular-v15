@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Bricolage';
+  src: url('/assets/font/BricolageGrotesqueSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 .banner {
     position: relative;
     padding-bottom: 10px;
@@ -18,11 +26,14 @@
         background-color: var(--bg-secondary);
     }
     h1 {
-        margin: 0;
-        color: var(--text-dark3);
-        font-weight: 600;
+      font-family: 'Bricolage';
+      margin: 0;
+      color: var(--text-dark3);
+      font-weight: 600;
     }
+
     p {
+        font-family: 'Bricolage';
         color: #7f969e;
         font-size: 0.95rem;
         line-height: 29px;
@@ -112,7 +123,7 @@
     //     min-width: 5%;
     // }
     owl-carousel-o {
-        // width: 100%; 
+        // width: 100%;
         img {
             border-radius: 18px;
             display: block;
@@ -122,3 +133,4 @@
         }
     }
 }
+
